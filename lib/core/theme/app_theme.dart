@@ -21,7 +21,6 @@ class AppTheme {
   static ThemeData get lightTheme {
     return ThemeData(
       useMaterial3: true,
-      fontFamily: 'Inter',
       colorScheme: const ColorScheme.light(
         primary: primaryColor,
         secondary: secondaryColor,
