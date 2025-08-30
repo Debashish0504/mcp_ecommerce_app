@@ -63,7 +63,8 @@ class _MainShellState extends State<MainShell> {
     // Update selected index based on current route
     final currentLocation = GoRouterState.of(context).uri.path;
     for (int i = 0; i < _routes.length; i++) {
-      if (currentLocation.startsWith(_routes[i])) {
+      if (currentLocation == _routes[i] || 
+          (i == 1 && currentLocation.startsWith('/catalog/product'))) {
         _selectedIndex = i;
         break;
       }

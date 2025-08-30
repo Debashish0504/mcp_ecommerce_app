@@ -49,7 +49,7 @@ final appRouterProvider = Provider<GoRouter>((ref) {
             builder: (context, state) => const CatalogPage(),
             routes: [
               GoRoute(
-                path: '/product/:productId',
+                path: 'product/:productId',
                 name: 'product-detail',
                 builder: (context, state) {
                   final productId = state.pathParameters['productId']!;
@@ -93,7 +93,7 @@ final appRouterProvider = Provider<GoRouter>((ref) {
         builder: (context, state) => const AllBrandsPage(),
         routes: [
           GoRoute(
-            path: '/:brandId',
+            path: ':brandId',
             name: 'brand-profile',
             builder: (context, state) {
               final brandId = state.pathParameters['brandId']!;
